@@ -41,6 +41,9 @@
 }
 
 - (void)didReceiveMemoryWarning {
+    
+    logWindow.text = @"";
+    
     [super didReceiveMemoryWarning];
 }
 

@@ -30,6 +30,8 @@
     
     UIButton *resetButton;
     
+    UISlider *pwmPin11;
+    
     RscMgr *manager;
     UInt8 rxBuffer[BUFFER_LEN];
 	UInt8 txBuffer[BUFFER_LEN];
@@ -55,10 +57,13 @@
 
 @property (nonatomic, retain) IBOutlet UIButton *resetButton;
 
+@property (nonatomic, retain) IBOutlet UISlider *pwmPin11;
+
 @property (nonatomic, retain) IBOutlet UIImageView *connectedIndicator;
 
 - (IBAction)help:(id)sender;
 - (IBAction)log:(id)sender;
+- (IBAction)slider:(id)sender;
 - (IBAction)toggle:(id)sender;
 - (IBAction)reset:(id)sender;
 

@@ -25,6 +25,7 @@
 @synthesize pin3;
 @synthesize pin2;
 @synthesize resetButton;
+@synthesize pwmPin11;
 @synthesize connectedIndicator;
 
 - (void)dealloc {
@@ -52,6 +53,7 @@
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad {
+        
     [super viewDidLoad];
     manager = [[RscMgr alloc] init]; 
 	[manager setDelegate:self];
@@ -88,6 +90,19 @@
 
 - (IBAction)log:(id)sender {
     [self presentModalViewController:self.logWindow animated:YES];
+    
+}
+
+#pragma mark - UISlider Callback
+
+- (IBAction) slider:(id)sender {
+    
+    int res = (int)[(UISlider *)sender value];
+    NSLog(@"Toggled output pin %i to %i", [sender tag], res);
+    txBuffer[0] = [sender tag];
+    txBuffer[1] = res;
+	int bytesWritten = [manager write:txBuffer Length:2];
+    NSLog( @"Wrote %d bytes to serial cable.", bytesWritten);
     
 }
 

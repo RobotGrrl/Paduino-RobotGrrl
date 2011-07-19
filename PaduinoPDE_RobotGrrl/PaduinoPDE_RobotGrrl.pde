@@ -6,6 +6,8 @@
 int rxBuffer[128]; 
 int rxIndex  = 0;    
 
+boolean serialMessages = false;
+
 void setup() {
   //wdt_disable();
   Serial.begin(9600);
@@ -38,23 +40,35 @@ void loop (){
 
    rxBuffer[rxIndex++] = Serial.read();
    if (rxIndex == LENGTH) {
+     
+     int port = (int)rxBuffer[0];
+     int val = (int)rxBuffer[1];
 
-     if ( rxBuffer[0] == 99 && rxBuffer[1] == 1 ) {
-       Serial.println( "Resetting" );
+     if ( port == 99 && val == 1 ) {
+       if(serialMessages) Serial.println( "Resetting" );
        delay(30);
        //wdt_enable(WDTO_30MS);
      } else {  
      
-       Serial.print( "Set: " );
-       Serial.print( rxBuffer[0], DEC );
-       Serial.print( " to: " );
-       Serial.println( rxBuffer[1], DEC );
-
-       if( rxBuffer[1] == 0 ) {
-         digitalWrite((int)rxBuffer[0], LOW);
-       } else {
-         digitalWrite((int)rxBuffer[0], HIGH);
+       if(serialMessages) {
+         Serial.print( "Set: " );
+         Serial.print( rxBuffer[0], DEC );
+         Serial.print( " to: " );
+         Serial.println( rxBuffer[1], DEC );
        }
+      
+      if( port == 3 || port == 5 || port == 6 || port == 9 || port == 10 || port == 11 ) {
+        analogWrite(port, val);
+      } else {
+      
+       if(val == 0 ) {
+         digitalWrite(port, LOW);
+       } else {
+         digitalWrite(port, HIGH);
+       }
+       
+      }
+       
        rxIndex = 0;
      }
    }
