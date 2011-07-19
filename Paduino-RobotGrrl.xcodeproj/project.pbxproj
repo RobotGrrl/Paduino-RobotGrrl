@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006B5A2713D5BE9D003856A4 /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 006B5A2413D5BE9D003856A4 /* libRscMgrUniv.a */; };
+		00715F4513CEDED6000B03F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00715F4413CEDED6000B03F5 /* UIKit.framework */; };
+		00715F4713CEDED6000B03F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00715F4613CEDED6000B03F5 /* Foundation.framework */; };
+		00715F4913CEDED6000B03F5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00715F4813CEDED6000B03F5 /* CoreGraphics.framework */; };
+		00715F4F13CEDED6000B03F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00715F4D13CEDED6000B03F5 /* InfoPlist.strings */; };
+		00715F5213CEDED6000B03F5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F5113CEDED6000B03F5 /* main.m */; };
+		00715F5513CEDED6000B03F5 /* PaduinoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F5413CEDED6000B03F5 /* PaduinoAppDelegate.m */; };
+		00715F5913CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F5813CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.m */; };
+		00715F5C13CEDED6000B03F5 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00715F5A13CEDED6000B03F5 /* MainWindow_iPhone.xib */; };
+		00715F6013CEDED6000B03F5 /* PaduinoAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F5F13CEDED6000B03F5 /* PaduinoAppDelegate_iPad.m */; };
+		00715F6313CEDED6000B03F5 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00715F6113CEDED6000B03F5 /* MainWindow_iPad.xib */; };
+		00715F7413CEE130000B03F5 /* RootController_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F7213CEE130000B03F5 /* RootController_iPhone.m */; };
+		00715F7513CEE130000B03F5 /* RootController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00715F7313CEE130000B03F5 /* RootController_iPhone.xib */; };
+		00715F7813CEE14D000B03F5 /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F7713CEE14D000B03F5 /* RootController.m */; };
+		00715F7C13CEE165000B03F5 /* RootController_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F7A13CEE165000B03F5 /* RootController_iPad.m */; };
+		00715F7D13CEE165000B03F5 /* RootController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00715F7B13CEE165000B03F5 /* RootController_iPad.xib */; };
+		00715F8113CEE2A5000B03F5 /* ArduinoUno.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00715F8013CEE2A5000B03F5 /* ArduinoUno.jpg */; };
+		00715F8B13CEE4DA000B03F5 /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00715F8A13CEE4DA000B03F5 /* ExternalAccessory.framework */; };
+		00715F8F13CEE521000B03F5 /* LogController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00715F8D13CEE521000B03F5 /* LogController.m */; };
+		00715F9013CEE521000B03F5 /* LogController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00715F8E13CEE521000B03F5 /* LogController.xib */; };
+		00715F9313CEE78D000B03F5 /* GreenLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 00715F9113CEE78D000B03F5 /* GreenLight.png */; };
+		00715F9413CEE78D000B03F5 /* RedLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 00715F9213CEE78D000B03F5 /* RedLight.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006B5A2413D5BE9D003856A4 /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
+		006B5A2513D5BE9D003856A4 /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
+		006B5A2613D5BE9D003856A4 /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
+		00715F4013CEDED6000B03F5 /* Paduino-RobotGrrl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paduino-RobotGrrl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00715F4413CEDED6000B03F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00715F4613CEDED6000B03F5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00715F4813CEDED6000B03F5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00715F4C13CEDED6000B03F5 /* Paduino-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Paduino-Info.plist"; sourceTree = "<group>"; };
+		00715F4E13CEDED6000B03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00715F5013CEDED6000B03F5 /* Paduino-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paduino-Prefix.pch"; sourceTree = "<group>"; };
+		00715F5113CEDED6000B03F5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00715F5313CEDED6000B03F5 /* PaduinoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaduinoAppDelegate.h; sourceTree = "<group>"; };
+		00715F5413CEDED6000B03F5 /* PaduinoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaduinoAppDelegate.m; sourceTree = "<group>"; };
+		00715F5713CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PaduinoAppDelegate_iPhone.h; path = iPhone/PaduinoAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		00715F5813CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PaduinoAppDelegate_iPhone.m; path = iPhone/PaduinoAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		00715F5B13CEDED6000B03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		00715F5E13CEDED6000B03F5 /* PaduinoAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PaduinoAppDelegate_iPad.h; path = iPad/PaduinoAppDelegate_iPad.h; sourceTree = "<group>"; };
+		00715F5F13CEDED6000B03F5 /* PaduinoAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PaduinoAppDelegate_iPad.m; path = iPad/PaduinoAppDelegate_iPad.m; sourceTree = "<group>"; };
+		00715F6213CEDED6000B03F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		00715F7113CEE130000B03F5 /* RootController_iPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController_iPhone.h; sourceTree = "<group>"; };
+		00715F7213CEE130000B03F5 /* RootController_iPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController_iPhone.m; sourceTree = "<group>"; };
+		00715F7313CEE130000B03F5 /* RootController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController_iPhone.xib; sourceTree = "<group>"; };
+		00715F7613CEE14D000B03F5 /* RootController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController.h; sourceTree = "<group>"; };
+		00715F7713CEE14D000B03F5 /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
+		00715F7913CEE165000B03F5 /* RootController_iPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootController_iPad.h; sourceTree = "<group>"; };
+		00715F7A13CEE165000B03F5 /* RootController_iPad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController_iPad.m; sourceTree = "<group>"; };
+		00715F7B13CEE165000B03F5 /* RootController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootController_iPad.xib; sourceTree = "<group>"; };
+		00715F8013CEE2A5000B03F5 /* ArduinoUno.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ArduinoUno.jpg; sourceTree = "<group>"; };
+		00715F8A13CEE4DA000B03F5 /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		00715F8C13CEE521000B03F5 /* LogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogController.h; sourceTree = "<group>"; };
+		00715F8D13CEE521000B03F5 /* LogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogController.m; sourceTree = "<group>"; };
+		00715F8E13CEE521000B03F5 /* LogController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogController.xib; sourceTree = "<group>"; };
+		00715F9113CEE78D000B03F5 /* GreenLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GreenLight.png; sourceTree = "<group>"; };
+		00715F9213CEE78D000B03F5 /* RedLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RedLight.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00715F3D13CEDED6000B03F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00715F8B13CEE4DA000B03F5 /* ExternalAccessory.framework in Frameworks */,
+				00715F4513CEDED6000B03F5 /* UIKit.framework in Frameworks */,
+				00715F4713CEDED6000B03F5 /* Foundation.framework in Frameworks */,
+				00715F4913CEDED6000B03F5 /* CoreGraphics.framework in Frameworks */,
+				006B5A2713D5BE9D003856A4 /* libRscMgrUniv.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00715F3513CEDED6000B03F5 = {
+			isa = PBXGroup;
+			children = (
+				00715F8313CEE4C5000B03F5 /* Redpark SDK */,
+				00715F4A13CEDED6000B03F5 /* Paduino */,
+				00715F4313CEDED6000B03F5 /* Frameworks */,
+				00715F4113CEDED6000B03F5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00715F4113CEDED6000B03F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00715F4013CEDED6000B03F5 /* Paduino-RobotGrrl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00715F4313CEDED6000B03F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00715F8A13CEE4DA000B03F5 /* ExternalAccessory.framework */,
+				00715F4413CEDED6000B03F5 /* UIKit.framework */,
+				00715F4613CEDED6000B03F5 /* Foundation.framework */,
+				00715F4813CEDED6000B03F5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00715F4A13CEDED6000B03F5 /* Paduino */ = {
+			isa = PBXGroup;
+			children = (
+				00715F5313CEDED6000B03F5 /* PaduinoAppDelegate.h */,
+				00715F5413CEDED6000B03F5 /* PaduinoAppDelegate.m */,
+				00715F7613CEE14D000B03F5 /* RootController.h */,
+				00715F7713CEE14D000B03F5 /* RootController.m */,
+				00715F8C13CEE521000B03F5 /* LogController.h */,
+				00715F8D13CEE521000B03F5 /* LogController.m */,
+				00715F8E13CEE521000B03F5 /* LogController.xib */,
+				00715F5613CEDED6000B03F5 /* iPhone */,
+				00715F5D13CEDED6000B03F5 /* iPad */,
+				00715F4B13CEDED6000B03F5 /* Supporting Files */,
+				00715F7F13CEE2A5000B03F5 /* Images */,
+			);
+			path = Paduino;
+			sourceTree = "<group>";
+		};
+		00715F4B13CEDED6000B03F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00715F4C13CEDED6000B03F5 /* Paduino-Info.plist */,
+				00715F4D13CEDED6000B03F5 /* InfoPlist.strings */,
+				00715F5013CEDED6000B03F5 /* Paduino-Prefix.pch */,
+				00715F5113CEDED6000B03F5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00715F5613CEDED6000B03F5 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				00715F5713CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.h */,
+				00715F5813CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.m */,
+				00715F5A13CEDED6000B03F5 /* MainWindow_iPhone.xib */,
+				00715F7113CEE130000B03F5 /* RootController_iPhone.h */,
+				00715F7213CEE130000B03F5 /* RootController_iPhone.m */,
+				00715F7313CEE130000B03F5 /* RootController_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		00715F5D13CEDED6000B03F5 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				00715F5E13CEDED6000B03F5 /* PaduinoAppDelegate_iPad.h */,
+				00715F5F13CEDED6000B03F5 /* PaduinoAppDelegate_iPad.m */,
+				00715F6113CEDED6000B03F5 /* MainWindow_iPad.xib */,
+				00715F7913CEE165000B03F5 /* RootController_iPad.h */,
+				00715F7A13CEE165000B03F5 /* RootController_iPad.m */,
+				00715F7B13CEE165000B03F5 /* RootController_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+		00715F7F13CEE2A5000B03F5 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				00715F8013CEE2A5000B03F5 /* ArduinoUno.jpg */,
+				00715F9113CEE78D000B03F5 /* GreenLight.png */,
+				00715F9213CEE78D000B03F5 /* RedLight.png */,
+			);
+			path = Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		00715F8313CEE4C5000B03F5 /* Redpark SDK */ = {
+			isa = PBXGroup;
+			children = (
+				006B5A2413D5BE9D003856A4 /* libRscMgrUniv.a */,
+				006B5A2513D5BE9D003856A4 /* redparkSerial.h */,
+				006B5A2613D5BE9D003856A4 /* RscMgr.h */,
+			);
+			path = "Redpark SDK";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00715F3F13CEDED6000B03F5 /* Paduino-RobotGrrl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00715F6613CEDED6000B03F5 /* Build configuration list for PBXNativeTarget "Paduino-RobotGrrl" */;
+			buildPhases = (
+				00715F3C13CEDED6000B03F5 /* Sources */,
+				00715F3D13CEDED6000B03F5 /* Frameworks */,
+				00715F3E13CEDED6000B03F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paduino-RobotGrrl";
+			productName = Paduino;
+			productReference = 00715F4013CEDED6000B03F5 /* Paduino-RobotGrrl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00715F3713CEDED6000B03F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Exeter";
+			};
+			buildConfigurationList = 00715F3A13CEDED6000B03F5 /* Build configuration list for PBXProject "Paduino-RobotGrrl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00715F3513CEDED6000B03F5;
+			productRefGroup = 00715F4113CEDED6000B03F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00715F3F13CEDED6000B03F5 /* Paduino-RobotGrrl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00715F3E13CEDED6000B03F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00715F4F13CEDED6000B03F5 /* InfoPlist.strings in Resources */,
+				00715F5C13CEDED6000B03F5 /* MainWindow_iPhone.xib in Resources */,
+				00715F6313CEDED6000B03F5 /* MainWindow_iPad.xib in Resources */,
+				00715F7513CEE130000B03F5 /* RootController_iPhone.xib in Resources */,
+				00715F7D13CEE165000B03F5 /* RootController_iPad.xib in Resources */,
+				00715F8113CEE2A5000B03F5 /* ArduinoUno.jpg in Resources */,
+				00715F9013CEE521000B03F5 /* LogController.xib in Resources */,
+				00715F9313CEE78D000B03F5 /* GreenLight.png in Resources */,
+				00715F9413CEE78D000B03F5 /* RedLight.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00715F3C13CEDED6000B03F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00715F5213CEDED6000B03F5 /* main.m in Sources */,
+				00715F5513CEDED6000B03F5 /* PaduinoAppDelegate.m in Sources */,
+				00715F5913CEDED6000B03F5 /* PaduinoAppDelegate_iPhone.m in Sources */,
+				00715F6013CEDED6000B03F5 /* PaduinoAppDelegate_iPad.m in Sources */,
+				00715F7413CEE130000B03F5 /* RootController_iPhone.m in Sources */,
+				00715F7813CEE14D000B03F5 /* RootController.m in Sources */,
+				00715F7C13CEE165000B03F5 /* RootController_iPad.m in Sources */,
+				00715F8F13CEE521000B03F5 /* LogController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00715F4D13CEDED6000B03F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00715F4E13CEDED6000B03F5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		00715F5A13CEDED6000B03F5 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00715F5B13CEDED6000B03F5 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		00715F6113CEDED6000B03F5 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00715F6213CEDED6000B03F5 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00715F6413CEDED6000B03F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		00715F6513CEDED6000B03F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		00715F6713CEDED6000B03F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paduino/Paduino-Prefix.pch";
+				INFOPLIST_FILE = "Paduino/Paduino-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Redpark SDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00715F6813CEDED6000B03F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Paduino/Paduino-Prefix.pch";
+				INFOPLIST_FILE = "Paduino/Paduino-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Redpark SDK\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00715F3A13CEDED6000B03F5 /* Build configuration list for PBXProject "Paduino-RobotGrrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00715F6413CEDED6000B03F5 /* Debug */,
+				00715F6513CEDED6000B03F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00715F6613CEDED6000B03F5 /* Build configuration list for PBXNativeTarget "Paduino-RobotGrrl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00715F6713CEDED6000B03F5 /* Debug */,
+				00715F6813CEDED6000B03F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00715F3713CEDED6000B03F5 /* Project object */;
+}
